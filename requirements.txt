@@ -27,7 +27,7 @@ MarkupSafe==1.1.1
 marshmallow==2.18.0
 marshmallow-jsonapi==0.23.1
 mccabe==0.6.1
-numpy==1.18.1
+numpy==1.22.0
 oauthlib==3.1.0
 pandas==1.0.2
 pylint==2.4.4
