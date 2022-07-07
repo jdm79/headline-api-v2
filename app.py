@@ -11,13 +11,8 @@ import requests
 from requests import get
 from datetime import date
 from bs4 import BeautifulSoup
-import sentry_sdk
-from sentry_sdk.integrations.flask import FlaskIntegration
 
-sentry_sdk.init(
-    dsn="https://9e7fb37583514ba3b9f13afb0ba70df1@o400717.ingest.sentry.io/5259365",
-    integrations=[FlaskIntegration()]
-)
+
 
 app = FlaskAPI(__name__)
 CORS(app)
