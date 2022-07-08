@@ -12,6 +12,10 @@ from requests import get
 from datetime import date
 from bs4 import BeautifulSoup
 
+from scraper import print_headlines
+
+# print_headlines()
+
 
 
 app = FlaskAPI(__name__)
@@ -19,6 +23,8 @@ CORS(app)
 
 @app.route("/headlines", methods=['GET'])
 def headlines_list():  
+  # print_headlines()
+
   with open(f"headlines.py", 'r') as f:
     headlines = f.read()
 
